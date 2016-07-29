@@ -67,7 +67,7 @@ for epoch = startEpoch, opt.nEpochs do
       -- print(' * Best model ', testTop1, testTop5)
    end
 
-   -- checkpoints.save(epoch, model, trainer.optimState, bestModel)
+   -- checkpoints.save(epoch, model, trainer.optimState, bestModel, opt)
 
    if opt.multiverso then
       if multiverso.worker_id() == 0 then
